@@ -21,4 +21,7 @@ console.log(result);
 console.log(result[2]);
 
 
+//02. // second is import // import {sum} from "./file" ; and right pack-json right type is module
+
+
 
