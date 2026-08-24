@@ -26,24 +26,24 @@ app.get("/:username/:id",(req,res)=>{
 
 
 
-// app.get("/name", (req, res) => {
-//     res.send("Class name is 12th");
-// });
+app.get("/name", (req, res) => {
+    res.send("Class name is 12th");
+});
 
 
-// app.get("/student", (req, res) => {
-//     res.send("Student name is Sem cute");
-// });
+app.get("/student", (req, res) => {
+    res.send("Student name is Sem cute");
+});
 
-// app.post("/",(req,res)=>{
-//    res.send(" This is a post request ");
+app.post("/",(req,res)=>{
+   res.send(" This is a post request ");
    
-// });
+});
 
 
-// app.get("*", (req, res) => {
-//     res.send("This page is not found");
-// });
+app.get("*", (req, res) => {
+    res.send("This page is not found");
+});
 
 
 // app.use((req,res)=>{
