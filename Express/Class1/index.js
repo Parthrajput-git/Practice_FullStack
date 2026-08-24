@@ -44,13 +44,12 @@ app.post("/",(req,res)=>{
 app.get("*", (req, res) => {
     res.send("This page is not found");
 });
-
-
-// app.use((req,res)=>{
-//     console.log("Request was received");
-//     // res.send("This is a basic response");
-//     let code="<h1>Class</h1> <ul> <li>Sem</li> <li>212</li> </ul>"
-//     res.send(code);
-// });
+// this is use method
+app.use((req,res)=>{
+    console.log("Request was received");
+    // res.send("This is a basic response");
+    let code="<h1>Class</h1> <ul> <li>Sem</li> <li>212</li> </ul>"
+    res.send(code);
+});
 
 
