@@ -19,9 +19,9 @@ app.get("/", (req, res) => {
 
 
 
-// app.get("/home",(req,res)=>{
-//   res.render("home.ejs")
-// });
+app.get("/home",(req,res)=>{
+  res.render("home.ejs")
+});
 
 app.listen(port, () => {
     console.log(`Linting request on port ${port}`);
