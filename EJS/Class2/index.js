@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 
-
+// This is home 
 app.get("/home",(req,res)=>{
   res.render("home.ejs")
 });
