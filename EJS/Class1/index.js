@@ -10,6 +10,10 @@ app.get("/home",(req,res)=>{
     res.render("home.ejs")
 });
 
+app.get("/",(req,res)=>{
+    console.log("GET request");
+});
+
 app.listen(port,()=>{
     console.log(`App are listing request on port ${port}`);
     
