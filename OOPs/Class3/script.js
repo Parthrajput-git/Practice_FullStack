@@ -14,7 +14,8 @@ class Mammal {
 class Dog extends Mammal {
     constructor(name, age) {
         console.log("I am child constructor");
-        super(name, age);//call the parent consturctor
+        
+        super(name, age);//call the parent consturctor and this is no return
 
     }
     bork(){
