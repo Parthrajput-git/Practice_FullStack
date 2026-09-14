@@ -15,7 +15,7 @@ app.set("views", path.join(__dirname, "views"));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-let posts = [
+let posts = [ //This is a basic database create for user
     {
         id: uuidv4(),
         username: "John Doe",
