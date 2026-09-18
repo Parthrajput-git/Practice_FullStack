@@ -71,7 +71,8 @@ app.patch("/posts/:id", (req, res) => {//This is a patch
     // res.send("Patch request are working :");
 });
 
-app.get("/posts/:id/edit",(req,res)=>{
+
+app.get("/posts/:id/edit",(req,res)=>{// This is a edit page render
       let { id } = req.params;
       let post = posts.find((p) => id === p.id);
       res.render("edit.ejs",{ post });
