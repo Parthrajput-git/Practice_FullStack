@@ -81,7 +81,8 @@ app.get("/posts/:id/edit",(req,res)=>{// This is a edit page render
    
 });
 
-app.delete("/posts/:id",(req,res)=>{
+
+app.delete("/posts/:id",(req,res)=>{// THis is delete method use method override
      let { id } = req.params;
       posts = posts.filter((p) => id !== p.id);
        res.redirect("/posts");
