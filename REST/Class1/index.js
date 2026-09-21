@@ -1,11 +1,10 @@
-// rest full apls
 
 const express = require("express");
 const app = express();
 const path = require("path");
 const port = 8080;
 
-const { v4: uuidv4 } = require('uuid');// Thia ia gernet random ids
+const { v4: uuidv4 } = require('uuid');
 const methodOverride=require("method-override");
 
 
@@ -18,7 +17,7 @@ app.set("views", path.join(__dirname, "views"));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-let posts = [ //This is a basic database create for user
+let posts = [
     {
         id: uuidv4(),
         username: "John Doe",
