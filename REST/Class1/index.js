@@ -61,7 +61,8 @@ app.get("/posts/:id", (req, res) => {
     res.render("show.ejs", { post });
 });
 
-app.patch("/posts/:id", (req, res) => {//This is a patch 
+
+app.patch("/posts/:id", (req, res) => {
   
     let { id } = req.params;
     let newContent = req.body.content;
