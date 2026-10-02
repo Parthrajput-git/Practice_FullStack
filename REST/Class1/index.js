@@ -59,9 +59,6 @@ app.get("/posts/:id", (req, res) => {
     console.log(post);
     res.render("show.ejs", { post });
 });
-
-
-//This is a upate sort part
 app.patch("/posts/:id", (req, res) => {
   
     let { id } = req.params;
