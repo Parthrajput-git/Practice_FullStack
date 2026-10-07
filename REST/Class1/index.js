@@ -21,9 +21,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 let posts = [
     {
+        
         id: uuidv4(),
         username: "John Doe",
-        content: "This is a sample post content.",
+        content: "This is a sample post content of my page.",
     },
     {
         id: uuidv4(),
