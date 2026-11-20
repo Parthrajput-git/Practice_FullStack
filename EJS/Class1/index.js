@@ -1,3 +1,5 @@
+//The server  is made by express EJS
+
 const express=require("express");
 const app=express();
 const path=require("path");
